@@ -11,9 +11,9 @@ class ImageDropDown extends Component{
             <span><Icon name='user' />{this.props.name}</span>
         )
         const options = [
-            { key: 'user', text: '帐号管理', icon: 'user' },
-            { key: 'settings', text: '系统设置', icon: 'settings' },
-            { key: 'sign-out', text: '登出', icon: 'sign out' },
+            { key: 'user', text: '帐号管理11', icon: 'user' },
+            { key: 'settings', text: '系统设置11', icon: 'settings' },
+            { key: 'sign-out', text: '登出11', icon: 'sign out' },
         ]
         return(<Dropdown
             trigger={trigger}
