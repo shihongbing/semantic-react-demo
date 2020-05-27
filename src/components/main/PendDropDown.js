@@ -16,7 +16,7 @@ class PendDropDown extends Component{
         const tagOptions = [
             {
                 key: 'Important',
-                text: '4个工单需要处理',
+                text: '100个工单需要处理',
                 value: 'Important',
                 label: { color: 'red', empty: true, circular: true },
             },
