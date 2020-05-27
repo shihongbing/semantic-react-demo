@@ -16,19 +16,19 @@ class PendDropDown extends Component{
         const tagOptions = [
             {
                 key: 'Important',
-                text: 'Important',
+                text: '3个工单需要处理',
                 value: 'Important',
                 label: { color: 'red', empty: true, circular: true },
             },
             {
                 key: 'Announcement',
-                text: 'Announcement',
+                text: '2个邮件需要回复',
                 value: 'Announcement',
                 label: { color: 'blue', empty: true, circular: true },
             },
             {
                 key: 'Cannot Fix',
-                text: 'Cannot Fix',
+                text: '3个bug需要修改',
                 value: 'Cannot Fix',
                 label: { color: 'black', empty: true, circular: true },
             },
