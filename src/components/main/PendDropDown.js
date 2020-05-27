@@ -28,7 +28,7 @@ class PendDropDown extends Component{
             },
             {
                 key: 'Cannot Fix',
-                text: '3个bug需要修改',
+                text: '4个bug需要修改',
                 value: 'Cannot Fix',
                 label: { color: 'black', empty: true, circular: true },
             },
