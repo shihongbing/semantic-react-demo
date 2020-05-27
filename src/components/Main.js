@@ -8,15 +8,17 @@ import {
     Grid,
     Header,
     Icon,
-    Image, Input,
+    Image, Input, Label,
     List,
-    Menu,
+    Menu, Message,
     Ref,
     Segment,
     Sidebar
 } from 'semantic-ui-react'
 import {Route} from "react-router-dom";
-
+import ImageDropDown from "./main/ImageDropDown";
+import avatarSrc from "./../assets/img/enid.png";
+import PendDropDown from "./main/PendDropDown";
 class Main extends Component {
     constructor(props) {
         super(props);
@@ -65,16 +67,20 @@ class Main extends Component {
                         <Segment basic>
                             <Grid>
                                 {/*头部导航栏*/}
-                                <Grid.Row color='teal'>
+                                <Grid.Row color='teal' columns='equal'>
                                     {/* align justify,bars,sliders horizontal*/}
                                     <Grid.Column>
                                         <Icon name='align justify' color='white' size='big' onClick={this.toggleVisibility}></Icon>
+                                        <Input size='mini'
+                                               icon={<Icon name='search' inverted circular link />}
+                                               placeholder='搜索...'
+                                        />
+                                    </Grid.Column>
+                                    <Grid.Column textAlign='right'>
+                                        <PendDropDown></PendDropDown>
                                     </Grid.Column>
                                     <Grid.Column>
-                                        <Input size='mini'
-                                            icon={<Icon name='search' inverted circular link />}
-                                            placeholder='搜索...'
-                                        />
+                                        <ImageDropDown name='欢迎您：shihongbing'></ImageDropDown>
                                     </Grid.Column>
                                 </Grid.Row>
                                 {/*当前位置*/}
