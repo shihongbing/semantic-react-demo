@@ -1,5 +1,6 @@
-import React,{Component} from "react";
-import {Dropdown, Grid, Icon, Image, Label} from "semantic-ui-react";
+import React, {Component} from "react";
+import {Dropdown, Icon, Label} from "semantic-ui-react";
+
 class PendDropDown extends Component{
     constructor(props) {
         super(props);

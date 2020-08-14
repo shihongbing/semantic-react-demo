@@ -1,5 +1,6 @@
-import React,{Component} from "react";
-import {Dropdown, Icon, Image} from "semantic-ui-react";
+import React, {Component} from "react";
+import {Dropdown, Icon} from "semantic-ui-react";
+
 class ImageDropDown extends Component{
     constructor(props) {
         super(props);

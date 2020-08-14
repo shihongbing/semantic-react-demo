@@ -56,7 +56,8 @@
   padding-top: 10px;
 }
 .Login__login___sCItb {
-  background-image: url("https://60.247.77.224:8843/img/loginbg.jpg");
+  //background-image: url("https://60.247.77.224:8843/img/loginbg.jpg");
+  background-color: #F8F8F8;
   background-position: center center;
   background-repeat: no-repeat;
   display: table;
@@ -64,4 +65,59 @@
   margin-right: auto;
   max-width: 1500px;
   width: 100%;
+}
+body{
+  background-color: #F8F8F8;
+  margin:0;
+}
+.titleIcon {
+  float: left !important;
+  margin: 0 10px 0 0 !important;
+}
+.dropdownIcon{
+}
+.ui.visible.left.sidebar~.fixed, .ui.visible.left.sidebar~.pusher {
+       transform: translate3d(200px,0,0);
+}
+.ui.left.sidebar, .ui.right.sidebar {
+  width: 200px;
+}
+
+.curr-position {
+  background: #fff;
+}
+
+.mainContent{
+  position: relative;
+  background: #fff;
+  box-shadow: 0 1px 2px #ccc;
+}
+.footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  z-index: 9999;
+}
+
+.pushable:not(body) {
+  transform: none;
+}
+
+.pushable:not(body) > .ui.sidebar,
+.pushable:not(body) > .fixed,
+.pushable:not(body) > .pusher:after {
+  position: fixed;
+}
+
+.error-info {
+  position: absolute;
+  bottom:-50px;
+  left:365px;
+  width:260px;
+  background:#ffffff;
+  border:1px solid #cccccc;
+  margin-left:8px;
+  padding:10px;
+  color:red;
 }
