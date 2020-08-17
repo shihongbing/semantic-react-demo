@@ -35,7 +35,6 @@ class Login extends Component{
      * 4. React中componentWillReceiveProps的替代升级方案
      */
     static getDerivedStateFromProps(nextProps, prevState) {
-        //console.log(nextProps);
         if (nextProps.auth_result) {
             //登录成功转到home页面
             nextProps.history.replace('/home');

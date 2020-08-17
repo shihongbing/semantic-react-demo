@@ -34,9 +34,9 @@ const reducer = (state = initialState, action) => {
     switch (action.type) {
         case types.USER_LOGIN_SUCCESS:
             //对象中的扩展运算符(...)用于取出参数对象中的所有可遍历属性，拷贝到当前对象之中
-            return {success:true,...action.payload};
+            return {auth_result:true,...action.payload};
         case types.USER_LOGIN_FAILED:
-            return {errorMsg:action.payload.errorMsg,success:false};
+            return {errorMsg:action.payload.errorMsg,auth_result:false};
         default:
             return state
     }

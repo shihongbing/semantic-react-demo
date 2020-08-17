@@ -6,10 +6,12 @@ axios.defaults.baseURL = BASE_URL;
 // 请求前拦截
 axios.interceptors.request.use(
     config => {
-        //console.log("发请求了,以后要在这里带上令牌");
-        config.headers = {
-            "Authorization": "Bearer "+localStorage.getItem("token")
-        };
+        //除了token请求都需要带上Authorization请求头
+        if(config.url.indexOf("/oauth/token")===-1){
+            config.headers = {
+                "Authorization": "Bearer "+localStorage.getItem("token")
+            };
+        }
         return config;
     },
     err => {
